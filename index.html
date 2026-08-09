@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Mobile-first: fit the device width, allow safe-area insets on iPhones
+         with a notch (viewport-fit=cover), and stop the user zoom-bouncing. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <!-- PWA basics -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#2563eb" />
+
+    <!-- iOS-specific PWA tags. iOS ignores most of manifest.json, so these
+         are what actually make "Add to Home Screen" behave like an app. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Porodica" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
+    <title>Porodično povezivanje</title>
+    <script type="module" crossorigin src="/porodicno-povezivanje/assets/index-BKHXmSGi.js"></script>
+    <link rel="stylesheet" crossorigin href="/porodicno-povezivanje/assets/index-C5a83QUu.css">
+  </head>
+  <body>
+    <!-- React mounts here -->
+    <div id="root"></div>
+  </body>
+</html>
