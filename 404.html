@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Porodica</title>
+    <!--
+      GitHub Pages is a plain file server: it has no rewrite rule, so any path
+      that is not a real file returns this page. The app itself has no
+      client-side router (the tabs are React state, not URLs), so this should
+      never normally be hit - it exists so a stale bookmark, a mistyped path or
+      an old installed-PWA shortcut lands back in the app instead of on
+      GitHub's 404 page.
+    -->
+    <script>
+      // Project site, so the app lives under /<repo>/. Send everything there.
+      var repo = location.pathname.split("/")[1] || "";
+      location.replace(location.origin + "/" + repo + "/");
+    </script>
+  </head>
+  <body></body>
+</html>
